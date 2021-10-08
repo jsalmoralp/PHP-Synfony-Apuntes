@@ -36,7 +36,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private $password;
 
     /**
-     * @var boolean The boolean status for the user
+     * @var bool The boolean status for the user
      * @ORM\Column(type="boolean")
      */
     private $banned;
@@ -154,7 +154,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @see UserStatus
      */
-    public function getBanned(): boolean
+    public function getBanned(): bool
     {
         $status = $this->banned;
 
