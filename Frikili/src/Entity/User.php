@@ -161,7 +161,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $status;
     }
 
-    public function setBanned(boolean $status): self
+    public function setBanned(bool $status): self
     {
         $this->banned = $status;
 
